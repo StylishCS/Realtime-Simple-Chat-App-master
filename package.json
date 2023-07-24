@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "open-cli ./public/index.html"
+    "devStart": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "open": "^9.1.0",
-    "open-cli": "^7.2.0",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
