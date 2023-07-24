@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req,res)=>{
-    res.redirect('http://localhost:3000/index.html');
+    res.redirect('https://chat-app-e9on.onrender.com/index.html');
 })
 
 const users = {}
