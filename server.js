@@ -5,14 +5,6 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req,res)=>{
-  res.send('test');
-})
-
-app.get('/chat', (req,res)=>{
-    res.sendFile('./public/index.html');
-})
-
 const users = {}
 
 io.on('connection', socket => {
@@ -28,6 +20,3 @@ io.on('connection', socket => {
     delete users[socket.id]
   })
 })
-
-
-app.listen(5500);
